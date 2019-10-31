@@ -92,7 +92,7 @@ function run(){
 
 $(document).ready(function(){
   $("#targetdate").datepicker({dateFormat: "YYYY MM DD"});
-  targetDate = new Date("2019 November 20");
+  targetDate = new Date("2019 November 25");
   targetDate.setMinutes(targetDate.getMinutes() - timeZoneOffset); // Compensates for any time zone.
   console.log (targetDate);
   $("#button").click(function() {
