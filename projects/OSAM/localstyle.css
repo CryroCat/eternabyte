@@ -1,3 +1,10 @@
+
+
+
+iframe{
+    overflow:hidden;
+}
+
 @font-face {
   font-family: Terminus;
   src: url("https://baabaablackgoat.com/projects/solstice/res/Terminus.ttf");
@@ -11,13 +18,22 @@ hr {
     margin-inline-end: auto;
     overflow: hidden;
     border-style: inset;
-    border-width: 1px;
+    border-width: 0px;
   	border-color: #8932ac;
-}
+	box-shadow: 0 0px 5px 1px #b52dff;
 
+@-webkit-keyframes pulse {
+	
+from { box-shadow: 0 0px 5px 2px #b52dff; }
+to {box-shadow: 0 0px 5px 0px #b52dff ;}
+}
 
 table { background-color: rgba(0,0,0,.5); !important;
       }
+
+}
+
+p { font-size: 20px;}
     
 
 html,body{
@@ -28,9 +44,8 @@ html,body{
 
   font-family: "Terminus";
   
-  background-image: url("https://i.imgur.com/tNRFhgZ.png");
-  animation: 60s scroll linear infinite;
- 
+background: black; 
+
   color: #eee;
   text-align: center;
   height: 100%;
@@ -109,3 +124,4 @@ blue {
 
 purple {
   color: purple
+
