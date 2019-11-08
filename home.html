@@ -12,7 +12,33 @@
   <meta property="og:title" content="Eternabyte Studio">
   <meta property="og:description" content="Just another small game dev team probably really hard at work by procrastinating right now!">
   <meta property="og:image" content="img/eterna.png">
-  <!--------------------->
+<var reloadIframes = function () {
+    var a = window.frames, b = a.length
+    while (b--) {
+        a[b].src = a[b].src;
+    }
+}> 
+
+
+<style> .glow {
+
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #801ac4, 0 0 40px #801ac4, 0 0 50px #801ac4, 0 0 60px #801ac4, 0 0 70px #801ac4;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #b52dff, 0 0 40px #b52dff, 0 0 50px #b52dff, 0 0 60px #b52dff, 0 0 70px #b52dff, 0 0 80px #b52dff;
+  }
+}
+</style>
+ <!--------------------->
   </div>
    </head>
    <body>
@@ -32,25 +58,17 @@
    </td>
 
    <td width = "90%">
-    <p><b>    Oneshot Aftermath</b> is a post <i>solstice</i> mod taking place a year after the original events of a solstice run in which place Niko is returned to the world of Oneshot, still filled with sunlight until the sun is stolen     making you and Niko embark on a new journey to save the world</p><br>
+    <p><b>A year after the original events of a solstice run, Niko is returned to the world of Oneshot, still filled with sunlight. This sunlight of course is short lived; being stolen from the summit causing you and Niko embark on a new pilgrimage to save the world.</p><br>
+<style> img {
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+}</style>
+<br><br><br><br><br><br>
+<a href="https://cryrocat.github.io/eternabyte/clock"> <center> <img src="projects/OSAM/clock.png" width="45%"> <br>
+ <div class="glow"> Enter the countdown..? </div>
+ </center></a>
 
-
-<b>   -Status-</b> <br>
-
-    1 Demo <br>
-
-
-<b><br>
-    -New additions-
-</b> <br>
-
-    - New story <br>
-    - New Characters <br>
-    - Custom Achievements <br>
-    - All New Maps <br>
-    - New Areas <br>
-    - New Music <br>
-    - New Puzzles <br>
 
     </td>
     <td width = "20%">
@@ -58,11 +76,12 @@
     </td>
   </tr> 
 </table>
+ 
   </div>  
     <hr>
 <center> <h2> Devlog </h2> </center>
 <hr>
-      <div id="devlog"><p><iframe src="devlograw.html" width=600 height=400 frameborder=0 ></iframe></p></div>
+      <div id="devlog"><p><iframe name="devlog" src="devlograw.html" width=600 height=400 frameborder=0 ></iframe></p></div>
       
      
       </td>
