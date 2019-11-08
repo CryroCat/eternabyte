@@ -1,3 +1,7 @@
+iframe{
+    overflow:hidden;
+}
+
 @font-face {
   font-family: Terminus;
   src: url("https://baabaablackgoat.com/projects/solstice/res/Terminus.ttf");
@@ -28,9 +32,8 @@ html,body{
 
   font-family: "Terminus";
   
-  background-image: url("https://i.imgur.com/tNRFhgZ.png");
-  animation: 60s scroll linear infinite;
- 
+background: black url("https://i.imgur.com/tNRFhgZ.png") repeat fixed center; 
+
   color: #eee;
   text-align: center;
   height: 100%;
@@ -109,3 +112,4 @@ blue {
 
 purple {
   color: purple
+
