@@ -17,6 +17,11 @@
 
 }
 
+img {
+   max-width:15%;
+   height:auto;
+   max-height:15%;
+}
 
 
 hr {
