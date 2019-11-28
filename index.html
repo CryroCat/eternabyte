@@ -13,8 +13,14 @@
     <style> body {overflow: hidden; } </style>
 	<script>
 		var el = document.getElementById('ifrm');
-	</script>
-	<script>
+	
+	$(document).ready(function() {
+      if (window.location.href.indexOf("?e") > -1) {//if url has ?fun=666 anywhere
+        self.frames['ifrm'].location.href = 'index.html'; //trigger Uboa instantly
+      }
+    });
+
+	
 	document.onload = function() { self.frames['ifrm'].location.href = 'home.html'; }
 	</script>
   <!--------------------->
