@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <!-- Murian was here. I helped a bit with the site. -->
+   <head>
+ <div id="properties"> 
+	<!-- Page properties     'home.html' -->
+	<link rel="stylesheet" type="text/css" href="titlebar.css">
+	<title>Eternabyte</title>
+	<link rel="icon" href="img/icon.ico">
+	<meta property="og:title" content="Eternabyte Studio">
+	<meta property="og:description" content="Just another small game dev team probably really hard at work by procrastinating right now!">
+	<meta property="og:image" content="/eternabyte/img/icon.ico">
+    <style> body {overflow: hidden; } </style>
+	<script>
+		var el = document.getElementById('ifrm');
+	
+	$(document).ready(function() {
+      if (window.location.href.indexOf("?e") > -1) {//if url has ?fun=666 anywhere
+        self.frames['ifrm'].location.href = 'index.html'; //trigger Uboaa instantly
+      }
+    });
+
+	
+	document.onload = function() { self.frames['ifrm'].location.href = 'home.html'; }
+	</script>
+  <!--------------------->
+  </div>
+    <h1> </h1>
+      <center> <img src = "img/eterna.png"> </center>
+      <center>  <div id="nav"><b><a href="/eternabyte/home.html" target="ifrm"> HOME</a> | <a href="/eternabyte/projects/" target="ifrm">CREATIONS</a> | <a href="/eternabyte/news" target="ifrm">NEWS</a> | <a href="/eternabyte/about" target="ifrm">ABOUT</a> | <a href="/eternabyte/credits">CREDITS</a></b></div> </center>	
+   <hr>
+   </head>
+   <body>
+
+   <iframe name="ifrm" id="ifrm" src="home.html" frameborder="0" width="100%" height="90%"  style='overflow:hidden; width:104%;'  ?var=xxx" ></iframe>
+
+
+
+
+   
+   </body>
+</html>

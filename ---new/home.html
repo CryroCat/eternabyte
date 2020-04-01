@@ -2,96 +2,61 @@
 <!DOCTYPE html>
 <html>
 
-  <!-- Murian was here. I helped a bit with the site. -->
-   <head>
- <div id="properties"> 
-  <!-- Page properties -->
-  <link rel="stylesheet" type="text/css" href="localstyle.css">
-  <title>Eternabyte</title>
-  <link rel="icon" href="img/icon.ico">
-  <meta property="og:title" content="Eternabyte Studio">
-  <meta property="og:description" content="Just another small game dev team probably really hard at work by procrastinating right now!">
-  <meta property="og:image" content="img/eterna.png">
-<var reloadIframes = function () {
-    var a = window.frames, b = a.length
-    while (b--) {
-        a[b].src = a[b].src;
-    }
-}> 
+	<Head>
+		<div id="Properties">
+			<link rel="icon" href="img/icon.ico">
+			<meta property="og:title" content="Eternabyte Studio">
+			<meta property="og:description" content="Just another small game dev team probably really hard at work by procrastinating right now!">
+			<meta property="og:image" content="img/eterna.png">
+			<link rel="stylesheet" type="text/css" href="localstyle.css">
+	</head>
+	
+	<Body>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
+	<script>
+	$(".logo-pointer").mousemove(getMousePosition);
 
-<style> .glow {
+    function getMousePosition(event) {
+      let elementVisible = $('.logo-pointer-image:visible');
+      let imageTop = elementVisible.offset().top;
+      let imageLeft = elementVisible.offset().left;
+      let imageBottom = imageTop + elementVisible.height();
+      let imageRight = imageLeft + elementVisible.width();
 
-  color: #fff;
-  text-align: center;
-  -webkit-animation: glow 1s ease-in-out infinite alternate;
-  -moz-animation: glow 1s ease-in-out infinite alternate;
-  animation: glow 1s ease-in-out infinite alternate;
-}
-
-@-webkit-keyframes glow {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #801ac4, 0 0 40px #801ac4, 0 0 50px #801ac4, 0 0 60px #801ac4, 0 0 70px #801ac4;
-  }
-  to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #b52dff, 0 0 40px #b52dff, 0 0 50px #b52dff, 0 0 60px #b52dff, 0 0 70px #b52dff, 0 0 80px #b52dff;
-  }
-}
-</style>
- <!--------------------->
-  </div>
-   </head>
-   <body>
-<center> <table width = "70%">
- <td>
-
- <td>
- <hr>
-<center> <h1> Current Project </h1> </center>
-<hr>
-   <div id="OSAM">
-    <table width = "90%" cellspacing = "5px" >
-      <tr>
-       <td width = "30%">
-        <center> <img src = "img/osam1.png" size = "100%" border-color: purple;> </center> <br>
-       <iframe src="https://widgets.gamejolt.com/package/v1?key=UALAi4aA" frameborder="0" width="500" height="245"></iframe>
-   </td>
-
-   <td width = "90%">
-    <p><b>A year after the original events of a solstice run, Niko is returned to the world of Oneshot, still filled with sunlight. This sunlight of course is short lived; being stolen from the summit causing you and Niko embark on a new pilgrimage to save the world.</p><br>
-<style> img {
-  image-rendering: auto;
-  image-rendering: crisp-edges;
-  image-rendering: pixelated;
-}</style>
-<br><br><br><br><br><br>
-<a href="https://cryrocat.github.io/eternabyte/clock"> <center> <img src="projects/OSAM/clock.png" width="45%"> <br>
- <div class="glow"> Enter the countdown..? </div>
- </center></a>
-
-
-    </td>
-    <td width = "20%">
-    <a href = "https://cryrocat.github.io/eternabyte/gone"> <img src = "img/thief.png" size = "50%" ></a>
-    </td>
-  </tr> 
-</table>
- 
-  </div>  
-    <hr>
-<center> <h2> Devlog </h2> </center>
-<hr>
-      <div id="devlog"><p><iframe name="devlog" src="devlograw.html" width=600 height=400 frameborder=0 ></iframe></p></div>
+      var mouseX = event.pageX;
+      var mouseY = event.pageY;
       
-     
-      </td>
-    </table>      
-   </center>
-  </body>
+      if (mouseY < imageTop || mouseY > imageBottom) {
+        return;
+      }
+      console.log(mouseY);
+      elementVisible.hide();
+      
+      if (mouseX > imageLeft && mouseX < imageRight){
+        $('.logo-pointer-image.middle').show();
+      }
+      else if (mouseX < imageLeft) {
+        $('.logo-pointer.left').show();
+      }
+      else {
+        $('.logo-pointer.right').show();
+      }
+    }
 
-<footer>
+    $('.logo-pointer-image').css('z-index', '0');
+	</script>
 
-</footer>
+	<div class="logo-pointer">
 
+        <div class="logo-container">
+          <img class="logo-pointer-image left" src="img/logo-left.png" alt="" />
+          <img class="logo-pointer-image middle" src="img/logo-up.png" alt="" />
+          <img class="logo-pointer-image right" src="img/logo-right.png" alt="" />
 
+        </div>
+      </div>
+	
+	</body>
+  
 </html>

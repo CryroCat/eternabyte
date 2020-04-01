@@ -3,8 +3,8 @@ iframe{
 }
 
 @font-face {
-  font-family: vhs;
-  src: url("vcr.ttf");
+  font-family: Terminus;
+  src: url("https://baabaablackgoat.com/projects/solstice/res/Terminus.ttf");
 }
 hr {
     display: block;
@@ -27,21 +27,17 @@ table { background-color: rgba(0,0,0,.5); !important;
 html,body{
 
 
-	cursor: url(img/cursor1.png), pointer;
-	height: 10%;
+  cursor: url(img/cursor1.png), pointer;
+  height: 10%;
 
-	font-family: "vhs";
+  font-family: "Terminus";
   
-	background: black url("img/background.gif") repeat fixed center; 
-	animation: 60s scroll linear infinite;
+background: black url("https://i.imgur.com/tNRFhgZ.png") repeat fixed center; 
 
-	color: #eee;
-	text-align: center;
-	height: 100%;
-
+  color: #eee;
+  text-align: center;
+  height: 100%;
 }
-
-
 @keyframes scroll{
   100%{
 background-position:-640px 0px;
@@ -116,29 +112,4 @@ blue {
 
 purple {
   color: purple
-}
 
-.logo-pointer
-  height 100vh
-  position relative
-
-  .logo-pointer-image
-    position absolute
-    height 83%
-    margin auto
-    top 3%
-    left 50%
-    transform translateX(-50%)
-    opacity 1
-    display block
-
-    &.active
-      opacity 1
-	  
-	  .title-container
-    max-width $max_width
-    margin 0 auto
-    height 100%
-    position relative
-	
-	
