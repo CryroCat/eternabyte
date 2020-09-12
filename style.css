@@ -6,6 +6,26 @@ html,body{
   cursor: url(img/cursor1.png), pointer;
   font-family: "Terminus";
   
+  @font-face {
+  font-family: 'Nintendoid1';
+  font-style: normal;
+  font-weight: 400;
+  src:  url(vcr.ttf) format('woff2');
+}
+html { background: #111;
+       padding: 1em;
+       font-family: Nintendoid1;
+       color: #eee;
+       font-size: 1em;
+       line-height: 1;
+       text-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #75fa69;
+       letter-spacing: 0.125em;
+       animation-duration: 0.01s;
+       animation-name: textflicker;
+       animation-iteration-count: infinite;
+       animation-direction: alternate;
+}
+  
   background-image: url("https://i.imgur.com/tNRFhgZ.png");
   animation: 60s scroll linear infinite;
  

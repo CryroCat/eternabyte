@@ -6,6 +6,39 @@ iframe{
   font-family: vhs;
   src: url("vcr.ttf");
 }
+
+/* dumb overlay code because im honestly really really bad at html lmao is taken from --> https://codemyui.com/crt-screen-text-flicker-animation-in-pure-css/ */
+
+@font-face {
+  font-family: 'Nintendoid1';
+  font-style: normal;
+  font-weight: 400;
+  src:  url(vcr.ttf) format('woff2');
+}
+html { background: #111;
+       padding: 1em;
+       font-family: Nintendoid1;
+       color: #eee;
+       font-size: 1em;
+       line-height: 1;
+       text-shadow: 0.06rem 0 0.06rem #ea36af, -0.125rem 0 0.06rem #75fa69;
+       letter-spacing: 0.125em;
+       animation-duration: 0.01s;
+       animation-name: textflicker;
+       animation-iteration-count: infinite;
+       animation-direction: alternate;
+}
+h1 { font-size: 5em; }
+
+@keyframes textflicker {
+  from {
+    text-shadow: 1px 0 0 #ea36af, -2px 0 0 #75fa69;
+  }
+  to {
+    text-shadow: 2px 0.5px 2px #ea36af, -1px -0.5px 2px #75fa69;
+  }
+}
+
 hr {
     display: block;
     unicode-bidi: isolate;
