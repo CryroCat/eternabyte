@@ -1,0 +1,22 @@
+@font-face {
+  font-family: Terminus;
+  src: url("https://baabaablackgoat.com/projects/solstice/res/Terminus.ttf");
+}
+html,body{
+  cursor: url(img/cursor1.png), pointer;
+}
+devlog {
+  font-family: "Terminus"; 
+  color: white;
+}
+
+red {
+  color: red;
+}
+blue {
+  color: blue;
+}
+
+purple {
+  color: purple
+}

@@ -1,42 +1,45 @@
 <!DOCTYPE html>
 <html>
-  <!-- Murian was here. I helped a bit with the site. -->
-   <head>
- <div id="properties"> 
-	<!-- Page properties     'home.html' -->
-	<link rel="stylesheet" type="text/css" href="titlebar.css">
-	<title>Eternabyte</title>
+ <head>
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="icon" href="img/icon.ico">
+	<meta property="og:image" content="/eternabyte/img/icon.ico">
 	<meta property="og:title" content="Eternabyte Studio">
 	<meta property="og:description" content="Just another small game dev team probably really hard at work by procrastinating right now!">
-	<meta property="og:image" content="/eternabyte/img/icon.ico">
-    <style> body {overflow: hidden; } </style>
-	<script>
-		var el = document.getElementById('ifrm');
 	
-	$(document).ready(function() {
-      if (window.location.href.indexOf("?e") > -1) {//if url has ?fun=666 anywhere
-        self.frames['ifrm'].location.href = 'index.html'; //trigger Uboaa instantly
-      }
-    });
-
-	
-	document.onload = function() { self.frames['ifrm'].location.href = 'home.html'; }
+ </head>
+ 
+ <script>
+		function playAudio(url) {
+  new Audio(url).play();
+}
 	</script>
-  <!--------------------->
-  </div>
-    <h1> </h1>
-      <center> <img src = "img/eterna.png"> </center>
-      <center>  <div id="nav"><b><a href="/eternabyte/home.html" target="ifrm"> HOME</a> | <a href="/eternabyte/projects/" target="ifrm">CREATIONS</a> | <a href="/eternabyte/news" target="ifrm">NEWS</a> | <a href="/eternabyte/about" target="ifrm">ABOUT</a> | <a href="/eternabyte/credits">CREDITS</a></b></div> </center>	
-   <hr>
-   </head>
-   <body>
-
-   <iframe name="ifrm" id="ifrm" src="home.html" frameborder="0" width="100%" height="90%"  style='overflow:hidden; width:104%;'  ?var=xxx" ></iframe>
-
-
-
-
-   
-   </body>
+ 
+ <body>
+<table style="width:100%; style="height:100%; overflow: visible " >
+ <td width = 10%">
+  <div id="sidebar" style="border-right: 3px solid #2b1239; table-layout: fixed;"; border="0">
+	    <center>
+		<br>
+		<img src = "img/icon.ico">
+	    <br><br><br><br>
+		<buttons>
+		<hover1><a href="main.html" target="ifrm">HOME</a></hover1><br>
+		<hover2><a href="about.html" target="ifrm">THE TEAM</a> </hover2><br>
+		<g> - PROJECTS - </g> <BR>
+		<hover3><a href="osam/index.html" target="ifrm">OSAM</a></hover3><br>
+		<hover4><a onclick="playAudio('error.wav')">???</a></hover4><br>
+	    </buttons> 
+</center>
+   </div>
+ </td>
+ 
+ <td width = "90%" >
+<div class="parent">
+    <div class="banner"> </div>
+	 <iframe id="ifrm" name="ifrm" id="ifrm" src="main.html" frameborder="0" style="height: 800px"  ?var=xxx" ></iframe>
+	</div>
+ </td>
+  </table>  
+ </body>
 </html>

@@ -1,0 +1,137 @@
+@font-face {
+  font-family: Terminus;
+  src: url("https://baabaablackgoat.com/projects/solstice/res/Terminus.ttf");
+}
+
+ .img:hover{
+    color: #424242; 
+  -webkit-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -ms-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+  opacity: 1;
+  transform: scale(4.15);
+  -ms-transform: scale(4.15); /* IE 9 */
+  -webkit-transform: scale(4.15); /* Safari and Chrome */
+
+}
+
+img {
+   max-width:15%;
+   height:auto;
+   max-height:15%;
+}
+
+
+
+
+
+hr {
+    display: block;
+    unicode-bidi: isolate;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+  	border-color: #8932ac;
+}
+
+
+table { background-color: rgba(0,0,0,.5); !important;
+      }
+    
+
+html,body{
+
+
+
+  cursor: url(img/cursor1.png), pointer;
+  height: 10%;
+
+  font-family: "Terminus";
+  
+  background-image: url("https://i.imgur.com/tNRFhgZ.png");
+  animation: 60s scroll linear infinite;
+ 
+  color: #eee;
+  text-align: center;
+  height: 100%;
+}
+@keyframes scroll{
+  100%{
+background-position:-640px 0px;
+  }
+}
+p {
+  margin: 3px;
+}
+a,visited{
+  text-decoration: none;
+  color: #61b;
+}
+#button{
+  color: #61b;
+  margin-bottom: 7px;
+  cursor: pointer;
+  display: inline-block;
+  width: auto;
+}
+#height-maintain{
+  height: 125px;
+}
+#wrapper{
+  display: inline-flex;
+}
+#wrapper div{
+  position: relative;
+}
+#wrapper div img{
+  position: absolute;
+  left: 50%;
+  transform:translateX(-50%);
+}
+.timepiece {
+  width: 36px;
+}
+.dots{
+  width: 10px;
+  padding:0 4px;
+}
+#door{
+  margin: 0 0 -35px 0;
+}
+#explanation {
+  display: none;
+}
+input {
+  background-color: rgba(55,55,55,.6);
+  color: white;
+  font-family: "Terminus";
+  border: 0;
+}
+button {
+  color: white;
+  font-family: "Terminus";
+  border: 1px solid white;
+  background-color: rgba(55,55,55,.6);
+
+}
+
+devlog {
+  font-family: "Terminus"; 
+  color: white;
+}
+
+red {
+  color: red;
+}
+blue {
+  color: blue;
+}
+
+purple {
+  color: purple

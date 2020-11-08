@@ -1,0 +1,82 @@
+@font-face {
+  font-family: Terminus;
+  src: url("https://baabaablackgoat.com/projects/solstice/res/Terminus.ttf");
+}
+html,body{
+  font-family: "Terminus";
+  
+  background-color: #000;
+  background: linear-gradient(#000,#121);
+  background-image: url("https://i.imgur.com/tNRFhgZ.png");  
+  animation: 60s scroll linear infinite;
+  color: #eee;
+  text-align: center;
+  height: 100%;
+}
+
+#container{
+                  /*Styling for any element with the id="container" */
+                          width:1000px; /* The width is fixed by pixels */
+                           height:800px; /* The height is fixed by pixels*/
+                          
+
+
+
+@keyframes scroll{
+  100%{
+background-position:-640px 0px;
+  }
+}
+p {
+  margin: 3px;
+}
+a,visited{
+  text-decoration: none;
+  color: #61b;
+}
+#button{
+  color: #61b;
+  margin-bottom: 7px;
+  cursor: pointer;
+  display: inline-block;
+  width: auto;
+}
+#height-maintain{
+  height: 125px;
+}
+#wrapper{
+  display: inline-flex;
+}
+#wrapper div{
+  position: relative;
+}
+#wrapper div img{
+  position: absolute;
+  left: 50%;
+  transform:translateX(-50%);
+}
+.timepiece {
+  width: 36px;
+}
+.dots{
+  width: 10px;
+  padding:0 4px;
+}
+#door{
+  margin: 0 0 -35px 0;
+}
+#explanation {
+  display: none;
+}
+input {
+  background-color: rgba(55,55,55,.6);
+  color: white;
+  font-family: "Terminus";
+  border: 0;
+}
+button {
+  color: white;
+  font-family: "Terminus";
+  border: 1px solid white;
+  background-color: rgba(55,55,55,.6);
+}
