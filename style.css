@@ -26,6 +26,11 @@ img {
 
 }
 
+sub { 
+ font-size: 10px;
+ text-align: top;
+}
+
 g { color:#6a267a; }
 
 ::-webkit-scrollbar {
