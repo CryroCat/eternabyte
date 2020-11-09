@@ -26,6 +26,8 @@ img {
 
 }
 
+
+
 sub { 
  font-size: 10px;
  text-align: top;
@@ -45,6 +47,7 @@ html,body:-webkit-scrollbar {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+	    position: relative;
 }
 .parent .banner {
    
@@ -55,6 +58,7 @@ html,body:-webkit-scrollbar {
     background: #000;
     border: none;
     flex-grow: 1;
+	position: relative;
 }
 .link:hover {
         cursor: default;
@@ -82,7 +86,7 @@ a {
     line-height: 350%;
 }
  hover1:hover {
-	 img: url("images/card-front.jpg") no-repeat;
+	
     color: #ff0080;
      cursor: url(img/cursor2.png), pointer;
 }
@@ -102,4 +106,12 @@ a {
      100%{
          background-position:0px 640px;
     }
-iframe {width: 100%;}
+.iframe {
+	padding-left: 4.5px;
+	width: 100%;
+position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;}
